@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callAlert(){
+            alert("알림메세지가 출력되는 내장함수 alert()");
+        }
+    </script>
+</head>
+<body>
+    <form action="result.html" method="get">
+        학교: <input type="text" size="15" name="schoolName" placeholder="대학과 전공">
+        <br>
+        이름: <input type="text" size="15" name="ID" value="성명">
+        <br>
+        비번: <input type="password" size="15" name="pwd">
+        <br>
+        성별: <input type="radio" name="gender" checked>여성 &nbsp;&nbsp;<input type="radio" name="gender">남성
+        <!-- 라디오 버튼은 하나의 그룹 중에 하나만 선택되어야 한다: name속성을 같게 하면 된다 -->
+        <br>
+        파일: <input type="file" name="file1">
+        <br>
+        취미: <input type="checkbox" name="read"> 독서
+              <input type="checkbox" name="movie"> 영화
+              <input type="checkbox" name="travel"> 여행
+        <br>
+        보이지 않는 data: <input type="hidden" value="10">
+        <br><br>
+        <input type="image" src="imgs/IMG_1157.JPG">
+        <br>
+        <button type="reset">취소하기</button>
+        <button type="submit">전송하기</button>
+        <button type="button" onclick="callAlert()">일반 버튼 (JavaScript 호출할 때 자주 사용)</button>
+    </form>
+
+</body>
+</html>
